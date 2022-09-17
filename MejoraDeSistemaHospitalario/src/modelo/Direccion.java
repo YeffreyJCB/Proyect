@@ -12,10 +12,42 @@ package modelo;
 public class Direccion {
     private String ciudad;
     private String calle;
-    private int numero;
+    private String numero;
     
-    public Direccion(String ciudad, String calle, int numero){
-        
+    public Direccion(){}
+    
+    public Direccion(String ciudad, String calle, String numero){
+        this.ciudad = ciudad;
+        this.calle = calle;
+        this.numero = numero;
     }
-    
+
+    public String getCiudad() {
+        return ciudad;
+    }
+
+    public void setCiudad(String ciudad) {
+        this.ciudad = ciudad;
+    }
+
+    public String getCalle() {
+        return calle;
+    }
+
+    public void setCalle(String calle) {
+        this.calle = calle;
+    }
+
+    public String getNumero() {
+        return numero;
+    }
+
+    public void setNumero(String numero) {
+        this.numero = numero;
+    }   
+
+    @Override
+    public String toString() {
+        return "Direccion [ciudad=" + ciudad + ", calle=" + calle + ", numero=" + numero + "]";
+    }        
 }

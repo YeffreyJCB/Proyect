@@ -4,22 +4,16 @@
  */
 package principal;
 
-import gui.InterfazGrafica;
-import modelo.Paciente;
-import modelo.Persona;
+import gui.FrmPrincipal;
 
 /**
  *
- * @author windos
+ * @author Jair Javier Fernandez Almeida 
+ *         Yeffrey Jair Carbajal Barcia 
  */
 public class Main {
     public static void main(String args[]){
-       InterfazGrafica inter = new InterfazGrafica("Programa El paciente feliz");
-       inter.setVisible(true);
-                
-       Persona paciente1 = new Paciente();
-       
-        
+       new FrmPrincipal().setVisible(true);                            
     }  
     
 }

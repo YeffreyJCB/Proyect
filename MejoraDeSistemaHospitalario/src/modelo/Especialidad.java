@@ -4,14 +4,20 @@
  */
 package modelo;
 
+import javax.naming.spi.StateFactory;
+
 /**
  *
  * @author Jair Javier Fernandez Almeida 
  *         Yeffrey Jair Carbajal Barcia 
  */
-enum Especialidad {
-    
-    OFTALMOLOGO, NEUROLOGO, DERMATOLOGO, TRAUMATOLOGO, GINECOLOGO, UROLOGO, CARDIOLOGO,
+public enum Especialidad {
+    OFTALMOLOGO, 
+    NEUROLOGO, 
+    DERMATOLOGO, 
+    TRAUMATOLOGO, 
+    GINECOLOGO, 
+    UROLOGO, 
+    CARDIOLOGO,
     GENERAL;
-    
 }

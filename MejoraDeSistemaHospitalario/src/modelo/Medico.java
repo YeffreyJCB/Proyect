@@ -12,9 +12,9 @@ package modelo;
  *         Yeffrey Jair Carbajal Barcia 
  */
 public class Medico extends Persona{
-    protected int licencia;
+    protected String licencia;
     protected Especialidad especialidad;
-    protected int año;
+    protected int year;
     protected int meses;
     protected int horaInicio;
     protected int horaFin;
@@ -22,16 +22,17 @@ public class Medico extends Persona{
     public Medico() {
     }
 
-    public Medico(int licencia, Especialidad especialidad, int año, int meses, int horaInicio, int horaFin) {
+    public Medico(String nombre, String apellidos, String telefono, String cedula, String carnet, Direccion direccion, String licencia, Especialidad especialidad, int year, int meses, int horaInicio, int horaFin) {
+        super(nombre, apellidos, telefono,cedula,carnet,direccion);
         this.licencia = licencia;
         this.especialidad = especialidad;
-        this.año = año;
+        this.year = year;
         this.meses = meses;
         this.horaInicio = horaInicio;
         this.horaFin = horaFin;
     }
 
-    public int getLicencia() {
+    public String getLicencia() {
         return licencia;
     }
 
@@ -39,8 +40,8 @@ public class Medico extends Persona{
         return especialidad;
     }
 
-    public int getAño() {
-        return año;
+    public int getYear() {
+        return year;
     }
 
     public int getMeses() {
@@ -55,7 +56,7 @@ public class Medico extends Persona{
         return horaFin;
     }
 
-    public void setLicencia(int licencia) {
+    public void setLicencia(String licencia) {
         this.licencia = licencia;
     }
 
@@ -63,8 +64,8 @@ public class Medico extends Persona{
         this.especialidad = especialidad;
     }
 
-    public void setAño(int año) {
-        this.año = año;
+    public void setYear(int year) {
+        this.year = year;
     }
 
     public void setMeses(int meses) {
@@ -78,29 +79,18 @@ public class Medico extends Persona{
     public void setHoraFin(int horaFin) {
         this.horaFin = horaFin;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+    @Override
+    public void ponerCarnet() {
+        String cedula1 = cedula;        
+        String nombre1 = nombre;
+        String apellidos1 = apellidos;
+        int numeroR = (int)Math.floor(Math.random()*100+10);        
+        cedula1.substring(2);                
+        cedula1.subSequence(2, 2);
+        
+    }
+   
+ 
     
 }

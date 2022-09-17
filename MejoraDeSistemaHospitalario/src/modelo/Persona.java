@@ -15,17 +15,16 @@ public abstract class Persona  {
     
     protected String nombre;  
     protected String apellidos;
-    protected int telefono;
-    protected int cedula;
-    protected int carnet;
+    protected String cedula;
+    protected String carnet;
     protected Direccion direccion;
-    protected ArrayList <Telefono> listTelefono;
+    protected String telefono;
     
 
     public Persona() {
     }
 
-    public Persona(String nombre, String apellidos, int telefono, int cedula, int carnet, Direccion direccion) {
+    public Persona(String nombre, String apellidos, String telefono, String cedula, String carnet, Direccion direccion) {
         this.nombre = nombre;
         this.apellidos = apellidos;
         this.telefono = telefono;
@@ -33,7 +32,9 @@ public abstract class Persona  {
         this.carnet = carnet;
         this.direccion = direccion;
     }
-
+    
+    public abstract void ponerCarnet();
+    
     public String getNombre() {
         return nombre;
     }
@@ -42,15 +43,11 @@ public abstract class Persona  {
         return apellidos;
     }
 
-    public int getTelefono() {
-        return telefono;
-    }
-
-    public int getCedula() {
+    public String getCedula() {
         return cedula;
     }
 
-    public int getCarnet() {
+    public String getCarnet() {
         return carnet;
     }
 
@@ -62,15 +59,11 @@ public abstract class Persona  {
         this.apellidos = apellidos;
     }
 
-    public void setTelefono(int telefono) {
-        this.telefono = telefono;
-    }
-
-    public void setCedula(int cedula) {
+    public void setCedula(String cedula) {
         this.cedula = cedula;
     }
 
-    public void setCarnet(int carnet) {
+    public void setCarnet(String carnet) {
         this.carnet = carnet;
     }
 
@@ -82,16 +75,11 @@ public abstract class Persona  {
         this.direccion = direccion;
     }
 
-    public ArrayList<Telefono> getListTelefono() {
-        return listTelefono;
+    public String getTelefono() {
+        return telefono;
     }
 
-    public void setListTelefono(ArrayList<Telefono> listTelefono) {
-        this.listTelefono = listTelefono;
+    public void setTelefono(String telefono) {
+        this.telefono = telefono;
     }
-    
-    public void addTelefono(Telefono telefono) {
-        listTelefono.add(telefono);
-    } 
-    
 }

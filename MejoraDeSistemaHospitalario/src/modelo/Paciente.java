@@ -1,8 +1,7 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package modelo;
+
+import java.util.ArrayList;
 
 /**
  *
@@ -10,39 +9,38 @@ package modelo;
  *         Yeffrey Jair Carbajal Barcia 
  */
 public class Paciente extends Persona{
-    protected boolean esAlergico;
-    protected int totalVacunasCovid;
+    protected String esAlergico;
+    protected String totalVacunasCovid;
 
     public Paciente() {
+        super();
     }
 
-    public Paciente(boolean esAlergico, int totalVacunasCovid) {
+    public Paciente(String nombre, String apellidos, String telefono, String cedula, String carnet, Direccion direccion, String esAlergico, String totalVacunasCovid) {
+        super(nombre, apellidos, telefono, cedula, carnet, direccion);
         this.esAlergico = esAlergico;
         this.totalVacunasCovid = totalVacunasCovid;
     }
+
     
-    public boolean esEsAlergico() {
+    public String getEsAlergico() {
         return esAlergico;
     }
 
-    public int getTotalVacunasCovid() {
+    public String getTotalVacunasCovid() {
         return totalVacunasCovid;
     }
 
-    public void setEsAlergico(boolean esAlergico) {
+    public void setEsAlergico(String esAlergico) {
         this.esAlergico = esAlergico;
     }
 
-    public void setTotalVacunasCovid(int totalVacunasCovid) {
+    public void setTotalVacunasCovid(String totalVacunasCovid) {
         this.totalVacunasCovid = totalVacunasCovid;
     }
-    
-    
-    
-    
-    
-    
-    
-    
-    
+
+    @Override
+    public void ponerCarnet() {
+        
+    }    
 }
